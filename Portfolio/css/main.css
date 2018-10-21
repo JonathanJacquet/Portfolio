@@ -297,9 +297,42 @@ h3 {
     text-align : center;
 }
 
+ul li {
+    list-style-type: none;
+}
+
+.avatar {
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+}
+
+.avatar img {
+    max-width: 340px;
+    max-height: 360px;
+}
+
+.contener_apropos {
+    display: block;
+    justify-content: center;
+    flex-direction: column;
+}
+.photo {
+    display: flex;
+    justify-content: center;
+}
+h3 {
+    margin: 0;
+}
+
+ul h3 {
+    background-color:lightslategray;
+}
+.color {
+    background-color: lightseagreen;
+}
 @media screen and (min-width: 720px) {
     .contener_form {
-        background-color: red;
         margin-top: 5em;
     }
     .link_RS_contact {
