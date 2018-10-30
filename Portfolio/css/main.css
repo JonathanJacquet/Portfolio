@@ -215,7 +215,12 @@ footer {
         align-content: center;
         flex-direction: column;
         border: 1px solid black;
+        background-image: url(../img/2.jpg)
     }
+
+
+
+
     .orange_column {
         width:20%;
         display: flex;
@@ -223,8 +228,7 @@ footer {
         align-content: center;
         flex-direction: column;
         border: 1px solid black;
-
-
+        background-image: url(../img/3.jpg)
     }
     .red_column {
         width:20%;
@@ -233,8 +237,7 @@ footer {
         align-content: center;
         flex-direction: column;
         border: 1px solid black;
-
-
+        background-image: url(../img/4.jpg)
     }
     .green_column {
         width: 20%;
@@ -243,7 +246,7 @@ footer {
         align-content: center;
         flex-direction: column;
         border: 1px solid black;
-
+        background-image: url(../img/5.jpg)
     }
     .blue_column {
         width: 20%;
@@ -252,7 +255,7 @@ footer {
         align-content: center;
         flex-direction: column;
         border: 1px solid black;
-
+        background-image: url(../img/6.png)
     }
    article {
         text-align: center;
@@ -331,14 +334,38 @@ ul li {
 
 }
 
+/*===========================
+        PAGE TRAVAUX
+============================ */
+
+.contener_project {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contener_project section {
+    background-color: red;
+    width: 35%;
+}
+
+.contener_github {
+    display: flex;
+    justify-content: flex-end;
+    background-color: red;
+}
 
 
+.github  {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Righteous', cursive;
+    width: 45%;
+}
 
-
-
-
-
-
+.github ul li {
+    color: black;
+}
 
 
 
@@ -455,6 +482,17 @@ ul {
     .skills {
         background-color: orange;
     }
+}
+h1, nav ul li,
+h2, h3, .color1, .color {
+    font-family: 'Righteous', cursive;
+}
+body {
+    font-family: 'Bad Script', cursive;
+}
+
+article p {
+    font-size: 1.5em;
 }
 /* ==========================================================================
    Helper classes
