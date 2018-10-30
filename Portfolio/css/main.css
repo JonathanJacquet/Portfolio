@@ -101,15 +101,29 @@ body {
     padding-left: 3%;
     padding-right: 3%;
 }
+
 nav {
     display: none;
+    background-color: gray;
+    border-bottom: 2px solid black;
+ }
+
+a {
+    color: white;
+    text-decoration: none;
 }
+footer {
+    background-color: grey;
+}
+
 .contener_column {
     display: none;
 }
 .contener_nav_tel {
     display: flex;
     justify-content: space-between;
+    background-color: grey;
+    border-bottom: 2px solid black;
 }
 
 
@@ -174,11 +188,10 @@ nav {
     /* NO HIDDEN ELEMENTS */
     body {
         height: 100vh;
-        padding:0;
     }
     nav {
         display: flex;
-        height: 15vh;
+        height: 10vh;
     }
     .contener_column {
         display: flex;
@@ -202,7 +215,12 @@ nav {
         align-content: center;
         flex-direction: column;
         border: 1px solid black;
+        background-image: url(../img/2.jpg)
     }
+
+
+
+
     .orange_column {
         width:20%;
         display: flex;
@@ -210,8 +228,7 @@ nav {
         align-content: center;
         flex-direction: column;
         border: 1px solid black;
-
-
+        background-image: url(../img/3.jpg)
     }
     .red_column {
         width:20%;
@@ -220,8 +237,7 @@ nav {
         align-content: center;
         flex-direction: column;
         border: 1px solid black;
-
-
+        background-image: url(../img/4.jpg)
     }
     .green_column {
         width: 20%;
@@ -230,7 +246,7 @@ nav {
         align-content: center;
         flex-direction: column;
         border: 1px solid black;
-
+        background-image: url(../img/5.jpg)
     }
     .blue_column {
         width: 20%;
@@ -239,7 +255,7 @@ nav {
         align-content: center;
         flex-direction: column;
         border: 1px solid black;
-
+        background-image: url(../img/6.png)
     }
    article {
         text-align: center;
@@ -255,9 +271,17 @@ form {
     margin: 0 auto;
     width: 90%;
     padding: 1em;
-    border: 1px solid #CCC;
+    border: 1px solid white;
     border-radius: 1em;
+    background-color: #65c9ff;
   }
+
+.contener_form  {
+    background-color: #ffa500;
+    display: flex;
+    justify-content: center;
+}
+
   
 form div + div {
     margin-top: 1em;
@@ -273,7 +297,7 @@ input, textarea {
     font: 1em sans-serif;
     width: 200px;
     box-sizing: border-box;
-    border: 1px solid #999;
+    border: 1px solid black;
 }
   
 input:focus, textarea:focus {
@@ -301,10 +325,73 @@ ul li {
     list-style-type: none;
 }
 
+.mail {
+    background-color: #ff3c3c;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-top: 2px solid black;
+
+}
+
+/*===========================
+        PAGE TRAVAUX
+============================ */
+
+.contener_project {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contener_project section {
+    background-color: red;
+    width: 35%;
+}
+
+.contener_github {
+    display: flex;
+    justify-content: flex-end;
+    background-color: red;
+}
+
+
+.github  {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Righteous', cursive;
+    width: 45%;
+}
+
+.github ul li {
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+            PAGE A PROPOS
+ ========================== */
+
+
 .avatar {
     background-color: orange;
     display: flex;
     justify-content: center;
+    border-bottom: 2px solid black;
 }
 
 .avatar img {
@@ -317,6 +404,8 @@ ul li {
     justify-content: center;
     flex-direction: column;
 }
+
+
 .photo {
     display: flex;
     justify-content: center;
@@ -325,20 +414,85 @@ h3 {
     margin: 0;
 }
 
-ul h3 {
-    background-color:lightslategray;
+ul {
+    padding:0;
+    margin:0;
+}
+.medecouvrir {
+    background-color: #65c9ff;
+}
+.color1 {
+    background-color: #FF8C00;
+    width: 100%;
 }
 .color {
-    background-color: lightseagreen;
+    background-color: #ff5c5c;
+    width: 100%;
 }
+
+
+.formation ul {
+    background-color: #ff3c3c;
+}
+
+.exp ul {
+    background-color: #ffa500;
+}
+.formation, .exp, footer{
+    border-top : 2px solid black;
+}
+.skills {
+    border-top: 2px solid black;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~
+        Tablette
+    ~~~~~~~~~~~~~~~~~~~~ */
+
 @media screen and (min-width: 720px) {
-    .contener_form {
-        margin-top: 5em;
-    }
     .link_RS_contact {
         display: flex;
         justify-content: space-around;
     }
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~
+        PC
+    ~~~~~~~~~~~~~~~~~~*/
+
+@media screen and (min-width: 1200px) {
+    .formation, .exp {
+        width: 49.9%;
+    }
+    .contener_form_exp {
+        display: flex;
+        justify-content: space-between;
+        background-color: #ff5c5c;
+    }
+    .formation {
+        border-right: 2px dashed black;
+    }
+    .color1 {
+        background-color: #ff3c3c;
+    }
+    .exp ul {
+        background-color: #ff5c5c;
+    }
+    .skills {
+        background-color: orange;
+    }
+}
+h1, nav ul li,
+h2, h3, .color1, .color {
+    font-family: 'Righteous', cursive;
+}
+body {
+    font-family: 'Bad Script', cursive;
+}
+
+article p {
+    font-size: 1.5em;
 }
 /* ==========================================================================
    Helper classes
